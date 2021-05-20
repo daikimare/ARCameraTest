@@ -11,6 +11,9 @@ import ARKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var arSceanView: ARSCNView!
+    @IBAction func handleTap(_ sender: Any) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

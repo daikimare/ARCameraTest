@@ -16,19 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YT1-Iu-RRQ">
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YT1-Iu-RRQ">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </arscnView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="YT1-Iu-RRQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4Ko-be-ITC"/>
+                            <constraint firstItem="YT1-Iu-RRQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ko4-CV-bFe"/>
+                            <constraint firstItem="YT1-Iu-RRQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UOn-WE-pCO"/>
+                            <constraint firstItem="YT1-Iu-RRQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="kZs-Ij-WOH"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ov2-jg-oWA" appends="YES" id="c3a-Fx-vxZ"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="arSceanView" destination="YT1-Iu-RRQ" id="DW3-Bm-HLo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ov2-jg-oWA">
+                    <connections>
+                        <action selector="handleTap:" destination="BYZ-38-t0r" id="Ki2-9y-Djb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="88.392857142857139"/>
         </scene>
