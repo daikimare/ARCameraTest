@@ -6,14 +6,29 @@
 //
 
 import UIKit
+import ARKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var arSceanView: ARSCNView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        arSceanView.session = ARSession()
+        
+        arSceanView.showsStatistics = true
+        arSceanView.debugOptions = ARSCNDebugOptions.showFeaturePoints
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        let configuration = ARWorldTrackingConfiguration()
+        arSceanView.session.run(configuration)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        arSceanView.session.pause()
+    }
 
 }
 
