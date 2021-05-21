@@ -15,6 +15,7 @@
 		289674BE2656A0FA002F4CC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289674BC2656A0FA002F4CC3 /* LaunchScreen.storyboard */; };
 		289674C92656A0FB002F4CC3 /* ARCameraTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289674C82656A0FB002F4CC3 /* ARCameraTestTests.swift */; };
 		289674D42656A0FB002F4CC3 /* ARCameraTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289674D32656A0FB002F4CC3 /* ARCameraTestUITests.swift */; };
+		289674E926573536002F4CC3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289674E826573536002F4CC3 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		289674CF2656A0FB002F4CC3 /* ARCameraTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCameraTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		289674D32656A0FB002F4CC3 /* ARCameraTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCameraTestUITests.swift; sourceTree = "<group>"; };
 		289674D52656A0FB002F4CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		289674E826573536002F4CC3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				289674E926573536002F4CC3 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				289674C72656A0FB002F4CC3 /* ARCameraTestTests */,
 				289674D22656A0FB002F4CC3 /* ARCameraTestUITests */,
 				289674AF2656A0F6002F4CC3 /* Products */,
+				289674E726573536002F4CC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				289674D52656A0FB002F4CC3 /* Info.plist */,
 			);
 			path = ARCameraTestUITests;
+			sourceTree = "<group>";
+		};
+		289674E726573536002F4CC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				289674E826573536002F4CC3 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
